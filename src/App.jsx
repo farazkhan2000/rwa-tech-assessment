@@ -15,7 +15,7 @@ import NotFound from './pages/NotFound';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col bg-white text-secondary-900 dark:bg-secondary-900 dark:text-secondary-100 transition-colors duration-200">
         <Navbar />
         <main className="flex-grow">
           <Routes>
@@ -28,7 +28,7 @@ function App() {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
-            <Route path = '*' element={<NotFound/>} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
